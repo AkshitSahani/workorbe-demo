@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import {Text, View} from 'react-native';
 import {createStore, combineReducers, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
-import firebase from 'firebase';
+import firebase from '@firebase/app';
 import thunk from 'redux-thunk';
+import RouterComponent from './Router';
 import AuthReducer from './src/reducers/AuthReducer';
 import LoginForm from './src/components/LoginForm';
 import SignUpForm from './src/components/SignUpForm';
@@ -32,7 +33,7 @@ export default class App extends Component {
 
     return (
       <Provider store={store}>
-        <LoginForm style={{marginTop: 50}}/>
+        <RouterComponent />
       </Provider>
     );
   }
