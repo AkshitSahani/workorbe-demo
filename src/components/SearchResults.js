@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {Header, Input, Card, Button} from './common';
 import {Actions} from 'react-native-router-flux';
+import {Card, Button, Header} from './common';
 
-class FiltersScreen extends Component {
+class SearchResults extends Component {
   render(){
     return(
       <Card>
-        <Header title="Filters Screen" />
-        <Button content="Search" pressed={()=>{Actions.SearchResults()}} />
+        <Header title="Search Results" />
+        <Button content="book" pressed={() => {Actions.LoginForm();}}/>
+        <Button content="Contact" pressed={() => {Actions.LoginForm();}}/>
       </Card>
     )
   };
@@ -36,4 +37,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(FiltersScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(SearchResults);

@@ -3,6 +3,7 @@ import {Text} from 'react-native';
 import {connect} from 'react-redux';
 import {Card, CardItem, Input, Button, Spinner} from './common';
 import {login} from './actionCreators';
+import {Actions} from 'react-native-router-flux';
 
 class LoginForm extends Component {
   render() {
@@ -24,7 +25,7 @@ class LoginForm extends Component {
           {this.props.loggedIn ? <Text>Congrats! You logged in!</Text> : null}
 
         <CardItem>
-          <Button content="Create Account" />
+          <Button content="Create Account" pressed={()=>{Actions.SignUpForm();}}/>
         </CardItem>
       </Card>
     )

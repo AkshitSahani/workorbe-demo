@@ -6,7 +6,7 @@ const SearchScreen = () => {
   return(
     <Card>
       <CardItem>
-        <Input placeholder="Capability" focussed={()=>{Actions.FilterScreen();}}/>
+        <Input placeholder="Capability" focussed={()=>{Actions.FiltersScreen();}}/>
       </CardItem>
     </Card>
   )
