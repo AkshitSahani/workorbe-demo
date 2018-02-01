@@ -6,8 +6,7 @@ import firebase from '@firebase/app';
 import thunk from 'redux-thunk';
 import RouterComponent from './Router';
 import AuthReducer from './src/reducers/AuthReducer';
-import LoginForm from './src/components/LoginForm';
-import SignUpForm from './src/components/SignUpForm';
+import FiltersReducer from './src/reducers/FiltersReducer';
 
 export default class App extends Component {
 
@@ -23,10 +22,10 @@ export default class App extends Component {
   firebase.initializeApp(config);
   }
 
-
   render() {
     const rootReducer = combineReducers({
-      auth: AuthReducer
+      auth: AuthReducer,
+      filters: FiltersReducer
     });
 
     const store = createStore(rootReducer, {}, applyMiddleware(thunk));

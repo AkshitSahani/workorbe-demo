@@ -1,6 +1,18 @@
 import React from 'react';
 
-const initialState = {email: '', password: '', loading: false, error: '', user: null, loggedIn: false, signedUp: false, name: '', company: '', phone: '', passwordConfirmation: ''};
+const initialState = {
+  email: '',
+  password: '',
+  loading: false,
+  error: '',
+  user: null,
+  loggedIn: false,
+  signedUp: false,
+  name: '',
+  company: '',
+  phone: '',
+  passwordConfirmation: ''
+};
 
 const AuthReducer = (state = initialState, action) => {
   switch (action.type) {
