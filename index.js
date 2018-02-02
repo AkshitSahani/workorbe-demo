@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './App';
+import Workorbe from './Workorbe';
 
-AppRegistry.registerComponent('manager', () => App);
+AppRegistry.registerComponent('workorbe', () => Workorbe);

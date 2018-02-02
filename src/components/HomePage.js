@@ -6,7 +6,7 @@ const HomePage = () => {
   return(
     <Card>
       <Header title="Workorbe" />
-      <Button content="Provider" pressed={()=>{Actions.SearchScreen()}}/>
+      <Button content="Provider" pressed={()=>{Actions.main()}}/>
       <Button content="Seeker" />
     </Card>
   )

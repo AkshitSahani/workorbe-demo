@@ -7,7 +7,7 @@ class SearchResults extends Component {
   render(){
     return(
       <Card>
-        <Header title="Search Results" />
+        <Header title="Search Results"/>
         <Button content="book" pressed={() => {Actions.LoginForm();}}/>
         <Button content="Contact" pressed={() => {Actions.LoginForm();}}/>
       </Card>

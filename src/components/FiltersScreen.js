@@ -8,7 +8,7 @@ class FiltersScreen extends Component {
     return(
       <Card>
         <Header title="Filters Screen" />
-        <Button content="Search" pressed={()=>{Actions.SearchResults()}} />
+        <Button content="Search" pressed={()=>{Actions.results()}} />
       </Card>
     )
   };

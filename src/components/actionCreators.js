@@ -19,7 +19,7 @@ export const login = (email, password) => {
   return (dispatch) => {
     dispatch(loginStart());
     fireBase.auth().signInWithEmailAndPassword(email, password)
-      .then((user) => {dispatch(loginSuccess(user)); Actions.SearchResults();})
+      .then((user) => {dispatch(loginSuccess(user)); Actions.results();})
       .catch((error)=>{return dispatch(loginFailure(error))});
   };
 };
@@ -28,7 +28,7 @@ export const signUp = (email, password) => {
   return (dispatch) => {
     dispatch(signUpStart());
     fireBase.auth().createUserWithEmailAndPassword(email, password)
-      .then((user)=>{dispatch(signUpSuccess(user)); Actions.SearchResults();})
+      .then((user)=>{dispatch(signUpSuccess(user)); Actions.results();})
       .catch((error)=>{return dispatch(signUpFailure(error))})
   };
 };

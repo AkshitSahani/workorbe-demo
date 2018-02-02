@@ -8,7 +8,7 @@ import RouterComponent from './Router';
 import AuthReducer from './src/reducers/AuthReducer';
 import FiltersReducer from './src/reducers/FiltersReducer';
 
-export default class App extends Component {
+export default class Workorbe extends Component {
 
   componentWillMount(){
     var config = {
