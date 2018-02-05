@@ -15,7 +15,7 @@ const RouterComponent = () => {
           <Scene key="HomePage" component={HomePage} initial/>
         </Scene>
         <Scene key="main">
-          <Scene key="SearchScreen" component={SearchScreen} leftTitle="Nav" onLeft={()=>{console.log('show nav bar');}}/>
+          <Scene key="SearchScreen" component={SearchScreen} leftTitle="Nav" onLeft={()=>{console.log('show nav bar');}}></Scene>
           <Scene key="FiltersScreen" component={FiltersScreen} />
         </Scene>
         <Scene key="results">
